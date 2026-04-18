@@ -207,6 +207,7 @@ export LD_LIBRARY_PATH=$PWD/%{_vpath_builddir}/bin
 %{_libdir}/libggml-base.so.*
 %{_libdir}/libggml-cpu.so.*
 %{_libdir}/libggml-vulkan.so.*
+%{_libdir}/libllama-common.so.*
 %{_bindir}/llama-batched-bench
 %{_bindir}/llama-bench
 %{_bindir}/llama-cli
@@ -222,6 +223,9 @@ export LD_LIBRARY_PATH=$PWD/%{_vpath_builddir}/bin
 %{_bindir}/llama-server
 %{_bindir}/llama-tokenize
 %{_bindir}/llama-tts
+%{_bindir}/llama-debug-template-parser
+%{_bindir}/llama-results
+%{_bindir}/llama-template-analysis
 
 %files devel
 %dir %{_libdir}/cmake/llama
@@ -237,6 +241,7 @@ export LD_LIBRARY_PATH=$PWD/%{_vpath_builddir}/bin
 %{_libdir}/libggml-base.so
 %{_libdir}/libggml-cpu.so
 %{_libdir}/libggml-vulkan.so
+%{_libdir}/libllama-common.so.*
 %{_libdir}/cmake/llama/*.cmake
 %{_libdir}/cmake/ggml/*.cmake
 %{_libdir}/pkgconfig/llama.pc
