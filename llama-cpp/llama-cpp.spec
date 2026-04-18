@@ -241,7 +241,7 @@ export LD_LIBRARY_PATH=$PWD/%{_vpath_builddir}/bin
 %{_libdir}/libggml-base.so
 %{_libdir}/libggml-cpu.so
 %{_libdir}/libggml-vulkan.so
-%{_libdir}/libllama-common.so.*
+%{_libdir}/libllama-common.so
 %{_libdir}/cmake/llama/*.cmake
 %{_libdir}/cmake/ggml/*.cmake
 %{_libdir}/pkgconfig/llama.pc
